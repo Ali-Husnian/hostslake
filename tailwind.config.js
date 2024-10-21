@@ -45,6 +45,7 @@ export default {
         "bright-sky-blue": "#7EC6FF",
         "repeat-medium-sky-blue": "#6CACDF",
         gray: "#B5B5B5",
+        card: "#F0D9C3",
         "li-gray": "#F2F2F2",
       },
       fontSize: (() => {

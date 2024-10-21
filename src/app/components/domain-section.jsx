@@ -35,12 +35,12 @@ const DomainSection = () => {
           {/* Buttons */}
           <div className="flex space-x-4 lg:space-x-0 lg:space-y-0 lg:flex-row gap-1">
             {/* Search button */}
-            <button className="w-full lg:w-auto px-6 py-3 bg-black text-white font-semibold hover:bg-gray-200 transition mt-4 lg:mt-0 hover:bg-[#F0D9C3] hover:text-black flex justify-center items-center">
+            <button className="w-full lg:w-auto px-6 py-3 bg-black text-white font-semibold hover:bg-gray-200 transition mt-4 lg:mt-0 hover:bg-card hover:text-black flex justify-center items-center">
               <FaSearch className="mr-2" /> Search
             </button>
 
             {/* Transfer button */}
-            <button className="w-full lg:w-auto px-6 py-3 border text-black font-semibold hover:bg-gray-200 transition mt-4 lg:mt-0  hover:bg-[#F0D9C3] flex justify-center items-center">
+            <button className="w-full lg:w-auto px-6 py-3 border text-black font-semibold hover:bg-gray-200 transition mt-4 lg:mt-0  hover:bg-card flex justify-center items-center">
               <FaExchangeAlt className="mr-2" /> Transfer
             </button>
           </div>
