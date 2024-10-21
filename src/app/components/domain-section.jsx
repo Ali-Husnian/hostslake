@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import React, { useState } from "react";
 import { FaSearch, FaExchangeAlt } from "react-icons/fa";
 
@@ -21,60 +22,80 @@ const DomainSection = () => {
         </p>
 
         {/* Search and Transfer Section */}
-        <div className="flex flex-col p-1  lg:flex-row lg:items-center lg:space-x-4 max-w-4xl mx-auto  lg:border border-gray-400">
+        <div className="flex flex-col p-1  lg:flex-row lg:items-center lg:space-x-4 max-w-4xl mx-auto  lg:border border-gray">
           {/* Input field */}
           <input
             value={searchTerm}
             onChange={handleSearch}
             type="text"
             placeholder="eg. example.com"
-            className="w-full px-4 py-3 text-gray-600 focus:outline-none mb-4 lg:mb-0 p-1 border lg:border-none border-gray-400 "
+            className="w-full px-4 py-3 text-gray-600 focus:outline-none mb-4 lg:mb-0 p-1 border lg:border-none border-gray"
           />
 
           {/* Buttons */}
           <div className="flex space-x-4 lg:space-x-0 lg:space-y-0 lg:flex-row gap-1">
             {/* Search button */}
-            <button className="w-full lg:w-auto px-6 py-3 border border-gray-400 bg-black text-white font-semibold hover:bg-gray-200 transition mt-4 lg:mt-0 hover:bg-[#F0D9C3] hover:text-black flex justify-center items-center">
+            <button className="w-full lg:w-auto px-6 py-3 bg-black text-white font-semibold hover:bg-gray-200 transition mt-4 lg:mt-0 hover:bg-[#F0D9C3] hover:text-black flex justify-center items-center">
               <FaSearch className="mr-2" /> Search
             </button>
 
             {/* Transfer button */}
-            <button className="w-full lg:w-auto px-6 py-3 border border-gray-400 text-black font-semibold hover:bg-gray-200 transition mt-4 lg:mt-0  hover:bg-[#F0D9C3] flex justify-center items-center">
+            <button className="w-full lg:w-auto px-6 py-3 border text-black font-semibold hover:bg-gray-200 transition mt-4 lg:mt-0  hover:bg-[#F0D9C3] flex justify-center items-center">
               <FaExchangeAlt className="mr-2" /> Transfer
             </button>
           </div>
         </div>
 
         {/* Domain Prices */}
-        <div className="flex justify-center items-center space-x-8 mb-4">
-          <div className="flex flex-col items-center">
-            <div className="w-10 h-10 bg-gray-300 rounded-full"></div>{" "}
+        <div className="flex justify-center items-center space-x-4 lg:space-x-8 mb-4">
+          <div className="flex flex-col lg:flex-row items-center mt-6 border-r-[1px] border-gray pr-2 lg:pr-6">
             {/* Placeholder for .com logo */}
-            <p className="mt-2 text-lg font-bold">.com</p>
+            <Image
+              src="/ForCompanies1.png"
+              width={50}
+              height={50}
+              alt="Logo.com"
+            />
             <p className="text-gray-600">$5.99</p>
           </div>
-          <div className="flex flex-col items-center">
-            <div className="w-10 h-10 bg-gray-300 rounded-full"></div>{" "}
+          <div className="flex flex-col lg:flex-row items-center mt-6 border-r-[1px] border-gray pr-2 lg:pr-6">
             {/* Placeholder for .net logo */}
-            <p className="mt-2 text-lg font-bold">.net</p>
+            <Image
+              src="/ForCompanies2.png"
+              width={50}
+              height={50}
+              alt="Logo.net"
+            />
             <p className="text-gray-600">$8.99</p>
           </div>
-          <div className="flex flex-col items-center">
-            <div className="w-10 h-10 bg-gray-300 rounded-full"></div>{" "}
+          <div className="flex flex-col lg:flex-row items-center mt-6 border-r-[1px] border-gray pr-2 lg:pr-6">
             {/* Placeholder for .org logo */}
-            <p className="mt-2 text-lg font-bold">.org</p>
+            <Image
+              src="/ForCompanies3.png"
+              width={50}
+              height={50}
+              alt="Logo.org"
+            />
             <p className="text-gray-600">$12.99</p>
           </div>
-          <div className="flex flex-col items-center">
-            <div className="w-10 h-10 bg-gray-300 rounded-full"></div>{" "}
+          <div className="flex flex-col lg:flex-row items-center mt-6 border-r-[1px] border-gray pr-2 lg:pr-6">
             {/* Placeholder for .biz logo */}
-            <p className="mt-2 text-lg font-bold">.biz</p>
+            <Image
+              src="/ForCompanies4.png"
+              width={50}
+              height={50}
+              alt="Logo.biz"
+            />
             <p className="text-gray-600">$18.49</p>
           </div>
-          <div className="flex flex-col items-center">
-            <div className="w-10 h-10 bg-gray-300 rounded-full"></div>{" "}
+          <div className="flex flex-col lg:flex-row items-center mt-6">
             {/* Placeholder for .info logo */}
-            <p className="mt-2 text-lg font-bold">.info</p>
+            <Image
+              src="/ForCompanies5.png"
+              width={50}
+              height={50}
+              alt="Logo.info"
+            />
             <p className="text-gray-600">$21.99</p>
           </div>
         </div>
