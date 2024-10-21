@@ -25,7 +25,7 @@ const HeroSection = () => {
               For plenty of power and room to grow, go Dedicated <br /> and get
               the whole box to yourself.
             </p>
-            <button className="mt-6 px-8 py-4 bg-black text-white font-bold tracking-wide hover:bg-white hover:text-black transition">
+            <button className="mt-6 px-8 py-4 bg-black text-white font-bold tracking-wide hover:bg-white hover:text-black transition-colors duration-300">
               Get Started Now
             </button>
           </div>
@@ -45,7 +45,7 @@ const HeroSection = () => {
                 whole box to yourself.
               </p>
 
-              <button className="mt-6 px-6 py-3 bg-black text-white font-bold tracking-wide text-sm hover:bg-white hover:text-black transition">
+              <button className="mt-6 px-6 py-3 bg-black text-white font-bold tracking-wide text-sm hover:bg-white hover:text-black transition-colors duration-300">
                 Get Started Now
               </button>
             </div>

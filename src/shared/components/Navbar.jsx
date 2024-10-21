@@ -80,7 +80,7 @@ export default function Navbar() {
               </Link>
             )}
             <section ref={animationParent} className="flex items-center gap-10">
-              <div className="hidden lg:flex items-center gap-4 transition-all">
+              <div className="hidden lg:flex items-center gap-4 transition-all duration-300">
                 {navItems.map((d, i) => (
                   <div
                     key={i}
@@ -94,17 +94,17 @@ export default function Navbar() {
                       >
                         <span>{d.label}</span>
                         {d.children && (
-                          <IoIosArrowDown className="rotate-180 transition-all group-hover:rotate-0" />
+                          <IoIosArrowDown className="rotate-180 transition-all duration-300 group-hover:rotate-0" />
                         )}
                       </p>
                     </Link>
                     {d.children && (
-                      <div className="absolute group left-0 top-[64px] hidden w-auto flex-col gap-1 rounded-b-sm bg-white py-3 shadow-md transition-all group-hover:flex">
+                      <div className="absolute group left-0 top-[64px] hidden w-auto flex-col gap-1 rounded-b-sm bg-white py-3 shadow-md transition-all duration-300 group-hover:flex">
                         {d.children.map((ch, i) => (
                           <Link
                             key={i}
                             href={ch.link ?? "#"}
-                            className={`flex cursor-pointer items-center py-1 pl-6 pr-8 text-text-color hover:text-green-color ${
+                            className={`flex cursor-pointer items-center py-1 pl-6 pr-8 text-text-color hover:text-green-color transition-colors duration-300 ${
                               pathname === ch.link
                                 ? "text-green-500"
                                 : "text-black"
@@ -120,7 +120,7 @@ export default function Navbar() {
                   </div>
                 ))}
                 <div className="hidden lg:flex items-center gap-2">
-                  <button className="bg-black border py-2 px-4 border-white text-white hover:bg-[#FFF5E9] hover:text-black transition-colors">
+                  <button className="bg-black border py-2 px-4 border-white text-white hover:bg-[#FFF5E9] hover:text-black transition-colors duration-300">
                     Live Chat
                   </button>
                 </div>
@@ -152,7 +152,7 @@ function MobileNav({ closeSideMenu }) {
             className="cursor-pointer text-4xl"
           />
         </section>
-        <div className="flex flex-col text-base gap-2 transition-all">
+        <div className="flex flex-col text-base gap-2 transition-all duration-300">
           <Link href="/">
             <Image
               src="/white-logo.png"
@@ -176,7 +176,7 @@ function MobileNav({ closeSideMenu }) {
         </div>
 
         <section className="flex flex-col gap-4 mt-4 items-start text-gray-800">
-          <button className="bg-black border text-white py-2 px-4 border-white hover:bg-[#FFF5E9] hover:text-black transition-colors">
+          <button className="bg-black border text-white py-2 px-4 border-white hover:bg-[#FFF5E9] hover:text-black transition-colors duration-300">
             Live Chat
           </button>
         </section>
@@ -239,7 +239,7 @@ function SingleNavItem({ label, link, children, closeSideMenu, pathname }) {
         <Link
           href={link}
           onClick={closeSideMenu}
-          className={`text-[15px] font-normal flex justify-start items-center py-2 px-2 gap-2 cursor-pointer hover:bg-slate-200 w-full ${
+          className={`text-[15px] font-normal flex justify-start items-center py-2 px-2 gap-2 cursor-pointer hover:bg-slate-200 transition-colors duration-300 w-full ${
             pathname === link ? "text-green-500" : "text-black"
           }`}
         >
@@ -248,17 +248,19 @@ function SingleNavItem({ label, link, children, closeSideMenu, pathname }) {
       ) : (
         <div className="py-1 transition-all">
           <button
-            className="text-[15px] font-normal flex justify-between items-center py-2 px-2 gap-2 cursor-pointer w-full hover:bg-slate-200"
+            className="text-[15px] font-normal flex justify-between items-center py-2 px-2 gap-2 cursor-pointer w-full hover:bg-slate-200 transition-colors duration-300"
             onClick={toggleDropdown}
           >
             {label}
             <IoIosArrowDown
-              className={`transition-all ${isDropdownOpen ? "rotate-180" : ""}`}
+              className={`transition-all duration-300 ${
+                isDropdownOpen ? "rotate-180" : ""
+              }`}
             />
           </button>
 
           {isDropdownOpen && (
-            <div className="flex flex-col gap-2 transition-all">
+            <div className="flex flex-col gap-2 transition-all duration-300">
               {children.map((ch, i) => (
                 <Link
                   key={i}

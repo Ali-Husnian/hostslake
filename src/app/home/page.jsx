@@ -15,7 +15,8 @@ const page = () => {
 
       <WebHostingFeatures />
 
-      {/* <WebHostingStatistics />*/}
+      <WebHostingStatistics />
+      {/**/}
     </div>
   );
 };

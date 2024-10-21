@@ -62,7 +62,7 @@ const WebHostingFeatures = () => {
               <p className="text-gray-600 mb-10">{feature.description}</p>
               <Link
                 href="#"
-                className="flex items-center justify-center mr-2 font-bold  text-black hover:text-gray-800"
+                className="flex items-center justify-center mr-2 font-bold text-black hover:text-gray-800 transition-colors duration-300"
               >
                 <FaArrowRight /> Learn More Info
               </Link>
