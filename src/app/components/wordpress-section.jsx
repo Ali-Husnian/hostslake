@@ -102,7 +102,7 @@ const WordpressSection = () => {
             href="#"
             className="flex items-center justify-center mt-6  text-black bg-white py-3 px-6 h-50px w-250px text-sm text-center hover:text-white hover:bg-black border transition-colors duration-300"
           >
-            <FaArrowRight className="mr-2" /> Get Started Know{" "}
+            <FaArrowRight className="mr-2" /> Get Started Now{" "}
           </Link>
         </center>
       </div>

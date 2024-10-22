@@ -15,9 +15,3 @@ body {
 }
 
 /* swiper slider style */
-.swiper-button-prev,
-.swiper-button-next {
-  /* Background color for buttons */
-  padding: 10px;
-  transition: background-color 0.3s;
-}

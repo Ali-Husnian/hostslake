@@ -5,8 +5,8 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
-import { FaStar, FaChevronLeft, FaChevronRight } from "react-icons/fa";
-import { Navigation, Pagination } from "swiper/modules";
+import { FaStar } from "react-icons/fa";
+import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import Image from "next/image";
 
 const reviews = [
@@ -71,9 +71,13 @@ const ClientReviewSlider = () => {
 
         <div className="relative">
           <Swiper
-            modules={[Navigation, Pagination]}
+            modules={[Navigation, Pagination, Autoplay]}
             spaceBetween={20}
             slidesPerView="3"
+            autoplay={{
+              delay: 2500,
+              disableOnInteraction: false,
+            }}
             breakpoints={{
               320: {
                 slidesPerView: 1, // For small screens (mobile)
@@ -91,10 +95,6 @@ const ClientReviewSlider = () => {
                 slidesPerView: 3, // For large screens (desktops)
                 spaceBetween: 20,
               },
-            }}
-            navigation={{
-              prevEl: ".swiper-button-prev",
-              nextEl: ".swiper-button-next",
             }}
             pagination={{ clickable: true }}
             className="pb-8"
@@ -127,14 +127,6 @@ const ClientReviewSlider = () => {
               </SwiperSlide>
             ))}
           </Swiper>
-
-          {/* Prev and Next buttons outside the cards */}
-          <div className="swiper-button-prev absolute left-0 top-1/2 transform -translate-y-1/2 cursor-pointer">
-            <FaChevronLeft className="text-3xl" />
-          </div>
-          <div className="swiper-button-next absolute right-0 top-1/2 transform -translate-y-1/2 cursor-pointer">
-            <FaChevronRight className="text-3xl" />
-          </div>
         </div>
       </div>
     </section>
