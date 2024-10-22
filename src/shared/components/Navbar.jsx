@@ -16,7 +16,7 @@ const navItems = [
     label: "Hosting",
     link: "#",
     children: [
-      { label: "BUFGET HOSTING", link: "/budget-hosting" },
+      { label: "BUDGET HOSTING", link: "/budget-hosting" },
       { label: "POWER HOSTING", link: "/power-hosting" },
       { label: "BUSSINESS HOSTING", link: "/bussiness-hosting" },
       { label: "VPS HOSTING", link: "/vps-hosting" },
