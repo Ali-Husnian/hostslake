@@ -65,7 +65,7 @@ const HostingPlans = () => {
           {plans.map((plan, index) => (
             <div
               key={index}
-              className="bg-white p-6 shadow-lg border group hover:bg-card transition-colors duration-300"
+              className="bg-whiteColor p-6 shadow-lg border group hover:bg-skinColor transition-colors duration-300"
             >
               <div className="flex justify-start items-center gap-1 mb-4">
                 <div className="h-5 w-5">
@@ -80,7 +80,7 @@ const HostingPlans = () => {
                 {plan.features.map((feature, idx) => (
                   <li
                     key={idx}
-                    className="flex items-center py-2 mb-2 border-b-[1px] border-gray group-hover:border-white transition-colors duration-300"
+                    className="flex items-center py-2 mb-2 border-b-[1px] border-gray group-hover:border-whiteColor transition-colors duration-300"
                   >
                     <FaCheck className="text-black mr-2" /> {feature}
                   </li>
@@ -93,7 +93,7 @@ const HostingPlans = () => {
               </p>
               <Link
                 href={plan.link}
-                className="flex items-center justify-center mt-6 w-full text-black bg-white py-3 px-4 font-bold text-center hover:text-white hover:bg-black border transition-colors duration-300"
+                className="flex items-center justify-center mt-6 w-full text-black bg-whiteColor py-3 px-4 font-bold text-center hover:text-whiteColor hover:bg-black border transition-colors duration-300"
               >
                 <FaArrowRight className="mr-2" /> Discover Plan{" "}
               </Link>
@@ -106,7 +106,7 @@ const HostingPlans = () => {
           </h2>
           <Link
             href="#"
-            className="flex items-center justify-center mt-6  text-black bg-white py-3 px-6 h-50px w-250px text-sm text-center hover:text-white hover:bg-black border transition-colors duration-300"
+            className="flex items-center justify-center mt-6  text-black bg-whiteColor py-3 px-6 h-50px w-250px text-sm text-center hover:text-whiteColor hover:bg-black border transition-colors duration-300"
           >
             <FaArrowRight className="mr-2" /> view all features{" "}
           </Link>

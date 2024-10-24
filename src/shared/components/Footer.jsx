@@ -4,7 +4,6 @@ import {
   FaLinkedinIn,
   FaPhoneAlt,
   FaEnvelope,
-  FaSearchLocation,
 } from "react-icons/fa";
 import SquareIcon from "@/app/icons/squareIcon";
 import { FaLocationDot } from "react-icons/fa6";
@@ -12,7 +11,7 @@ import Image from "next/image";
 
 const Footer = () => {
   return (
-    <footer className="bg-black text-white pt-16">
+    <footer className="bg-blackColor text-whiteColor pt-16">
       <div className="container mx-auto px-4 lg:px-8">
         <div className="flex flex-col md:flex-row justify-between gap-10">
           {/* Logo and Description Section */}
@@ -25,25 +24,25 @@ const Footer = () => {
             <div className="flex space-x-2">
               <a
                 href="#"
-                className="transition-colors duration-300 hover:text-card"
+                className="transition-colors duration-300 hover:text-skinColor"
               >
-                <div className="flex items-center justify-center text-white hover:text-black transition-colors duration-300 hover:bg-card h-10 w-10 rounded-full">
+                <div className="flex items-center justify-center text-whiteColor hover:text-blackColor transition-colors duration-300 hover:bg-skinColor h-10 w-10 rounded-full">
                   <FaFacebookF />
                 </div>
               </a>
               <a
                 href="#"
-                className="transition-colors duration-300 hover:text-card"
+                className="transition-colors duration-300 hover:text-skinColor"
               >
-                <div className="flex items-center justify-center text-white hover:text-black transition-colors duration-300 hover:bg-card h-10 w-10 rounded-full">
+                <div className="flex items-center justify-center text-whiteColor hover:text-blackColor transition-colors duration-300 hover:bg-skinColor h-10 w-10 rounded-full">
                   <FaTwitter />
                 </div>
               </a>
               <a
                 href="#"
-                className="transition-colors duration-300 hover:text-card"
+                className="transition-colors duration-300 hover:text-skinColor"
               >
-                <div className="flex items-center justify-center text-white hover:text-black transition-colors duration-300 hover:bg-card h-10 w-10 rounded-full">
+                <div className="flex items-center justify-center text-whiteColor hover:text-blackColor transition-colors duration-300 hover:bg-skinColor h-10 w-10 rounded-full">
                   <FaLinkedinIn />
                 </div>
               </a>
@@ -57,7 +56,7 @@ const Footer = () => {
               <li>
                 <a
                   href="#"
-                  className="transition-colors duration-300 hover:text-card text-sm"
+                  className="transition-colors duration-300 hover:text-skinColor text-sm"
                 >
                   <span className="flex items-center">
                     <SquareIcon /> Home
@@ -67,7 +66,7 @@ const Footer = () => {
               <li>
                 <a
                   href="#"
-                  className="transition-colors duration-300 hover:text-card text-sm"
+                  className="transition-colors duration-300 hover:text-skinColor text-sm"
                 >
                   <span className="flex items-center ">
                     <SquareIcon /> About
@@ -77,7 +76,7 @@ const Footer = () => {
               <li>
                 <a
                   href="#"
-                  className="transition-colors duration-300 hover:text-card text-sm"
+                  className="transition-colors duration-300 hover:text-skinColor text-sm"
                 >
                   <span className="flex items-center ">
                     <SquareIcon /> Support
@@ -87,7 +86,7 @@ const Footer = () => {
               <li>
                 <a
                   href="#"
-                  className="transition-colors duration-300 hover:text-card text-sm"
+                  className="transition-colors duration-300 hover:text-skinColor text-sm"
                 >
                   <span className="flex items-center">
                     <SquareIcon /> Domain
@@ -97,7 +96,7 @@ const Footer = () => {
               <li>
                 <a
                   href="#"
-                  className="transition-colors duration-300 hover:text-card text-sm"
+                  className="transition-colors duration-300 hover:text-skinColor text-sm"
                 >
                   <span className="flex items-center">
                     <SquareIcon /> Contact
@@ -114,7 +113,7 @@ const Footer = () => {
               <li>
                 <a
                   href="#"
-                  className="transition-colors duration-300 hover:text-card text-sm"
+                  className="transition-colors duration-300 hover:text-skinColor text-sm"
                 >
                   <span className="flex items-center">
                     <SquareIcon /> Budget Hosting
@@ -124,7 +123,7 @@ const Footer = () => {
               <li>
                 <a
                   href="#"
-                  className="transition-colors duration-300 hover:text-card text-sm"
+                  className="transition-colors duration-300 hover:text-skinColor text-sm"
                 >
                   <span className="flex items-center">
                     <SquareIcon /> Power Hosting
@@ -134,7 +133,7 @@ const Footer = () => {
               <li>
                 <a
                   href="#"
-                  className="transition-colors duration-300 hover:text-card text-sm"
+                  className="transition-colors duration-300 hover:text-skinColor text-sm"
                 >
                   <span className="flex items-center">
                     <SquareIcon /> Bussiness Hosting
@@ -144,7 +143,7 @@ const Footer = () => {
               <li>
                 <a
                   href="#"
-                  className="transition-colors duration-300 hover:text-card text-sm"
+                  className="transition-colors duration-300 hover:text-skinColor text-sm"
                 >
                   <span className="flex items-center">
                     <SquareIcon /> VPS Hosting
@@ -154,7 +153,7 @@ const Footer = () => {
               <li>
                 <a
                   href="#"
-                  className="transition-colors duration-300 hover:text-card text-sm"
+                  className="transition-colors duration-300 hover:text-skinColor text-sm"
                 >
                   <span className="flex items-center">
                     <SquareIcon /> Blogs
@@ -169,18 +168,18 @@ const Footer = () => {
             <h3 className="text-lg font-semibold mb-6">Contact Us</h3>
             <ul className="space-y-2">
               <li>
-                <span className="flex items-center gap-2 transition-colors duration-300 hover:text-card text-sm ">
+                <span className="flex items-center gap-2 transition-colors duration-300 hover:text-skinColor text-sm ">
                   <FaPhoneAlt /> +971501384504
                 </span>
               </li>
               <li>
-                <span className="flex items-center gap-2 transition-colors duration-300 hover:text-card text-sm">
+                <span className="flex items-center gap-2 transition-colors duration-300 hover:text-skinColor text-sm">
                   {" "}
                   <FaEnvelope /> info@hostslake.com
                 </span>
               </li>
               <li>
-                <span className="flex items-center gap-2 transition-colors duration-300 hover:text-card text-sm">
+                <span className="flex items-center gap-2 transition-colors duration-300 hover:text-skinColor text-sm">
                   <FaLocationDot /> 09, SAIF Zone 514789 Dubai UAE
                 </span>
               </li>
@@ -190,7 +189,7 @@ const Footer = () => {
       </div>
 
       {/* Bottom Section */}
-      <div className=" bg-[#121112] py-5 mt-16 text-center text-gray-500">
+      <div className=" bg-darkColor py-5 mt-16 text-center text-gray-500">
         <p>Copyright © Hostslake® 2024. All rights reserved</p>
       </div>
     </footer>

@@ -27,9 +27,15 @@ export default {
     extend: {
       colors: {
         // digital-markting
-        background: "var(--background)",
-        foreground: "var(--foreground)",
-        "green-color": "#3DDDA0",
+        greenColor: "#3DDDA0",
+        slateColor: "#e2e8f0",
+        lightSkinColor: "#FFF5E9",
+        skinColor: "#F0D9C3",
+        lightYallowColor: "#eef0c3",
+        lightSkyBlueColor: "#C2DBEF",
+        blackColor: "#000000",
+        whiteColor: "#FFFFFF",
+        darkColor: "#121112",
 
         // digital-markting
         primary: "#013966",
@@ -45,7 +51,6 @@ export default {
         "bright-sky-blue": "#7EC6FF",
         "repeat-medium-sky-blue": "#6CACDF",
         gray: "#B5B5B5",
-        card: "#F0D9C3",
         "li-gray": "#F2F2F2",
       },
       fontSize: (() => {

@@ -65,7 +65,7 @@ export default function Navbar() {
         <nav
           className={`right-0 left-0 flex w-full items-center justify-between max-sm:justify-between ${
             !isSideMenuOpen && "py-3"
-          } lg:py-0 text-sm shadow-md bg-black`}
+          } lg:py-0 text-sm shadow-md bg-blackColor`}
         >
           <div className="container mx-auto flex items-center justify-between">
             {!isSideMenuOpen && (
@@ -88,8 +88,10 @@ export default function Navbar() {
                   >
                     <Link href={d.link ?? "#"}>
                       <p
-                        className={`flex cursor-pointer items-center gap-2 text-heading-color lg:text-white font-bold ${
-                          pathname === d.link ? "text-green-500" : "text-black"
+                        className={`flex cursor-pointer items-center gap-2 text-heading-color lg:text-whiteColor font-bold ${
+                          pathname === d.link
+                            ? "text-greenColor"
+                            : "text-blackColor"
                         }`}
                       >
                         <span>{d.label}</span>
@@ -99,15 +101,15 @@ export default function Navbar() {
                       </p>
                     </Link>
                     {d.children && (
-                      <div className="absolute group left-0 top-[64px] hidden w-auto flex-col gap-1 rounded-b-sm bg-white py-3 shadow-md transition-all duration-300 group-hover:flex">
+                      <div className="absolute group left-0 top-[64px] hidden w-auto flex-col gap-1 rounded-b-sm bg-whiteColor py-3 shadow-md transition-all duration-300 group-hover:flex">
                         {d.children.map((ch, i) => (
                           <Link
                             key={i}
                             href={ch.link ?? "#"}
-                            className={`flex cursor-pointer items-center py-1 pl-6 pr-8 text-text-color hover:text-green-color transition-colors duration-300 ${
+                            className={`flex cursor-pointer items-center py-1 pl-6 pr-8 text-blackColor hover:text-greenColor transition-colors duration-300 ${
                               pathname === ch.link
-                                ? "text-green-500"
-                                : "text-black"
+                                ? "text-greenColor"
+                                : "text-blackColor"
                             }`}
                           >
                             <span className="whitespace-nowrap pl-3">
@@ -120,7 +122,7 @@ export default function Navbar() {
                   </div>
                 ))}
                 <div className="hidden lg:flex items-center gap-2">
-                  <button className="bg-black border py-2 px-4 border-white text-white hover:bg-[#FFF5E9] hover:text-black transition-colors duration-300">
+                  <button className="bg-blackColor border py-2 px-4 border-whiteColor text-whiteColor hover:bg-lightSkinColor hover:text-blackColor transition-colors duration-300">
                     Live Chat
                   </button>
                 </div>
@@ -129,7 +131,7 @@ export default function Navbar() {
             </section>
             <FiMenu
               onClick={openSideMenu}
-              className={`cursor-pointer text-white text-4xl block lg:hidden ${
+              className={`cursor-pointer text-whiteColor text-4xl block lg:hidden ${
                 isSideMenuOpen && "hidden"
               }`}
             />
@@ -144,8 +146,8 @@ function MobileNav({ closeSideMenu }) {
   const pathname = usePathname(); // Get current pathname for mobile as well
 
   return (
-    <div className="fixed left-0 top-0 flex h-full min-h-screen w-full justify-start bg-black/60 md:flex lg:hidden">
-      <div className="h-full w-[65%] overflow-auto bg-white px-4 py-4">
+    <div className="fixed left-0 top-0 flex h-full min-h-screen w-full justify-start bg-blackColor/60 md:flex lg:hidden">
+      <div className="h-full w-[65%] overflow-auto bg-whiteColor px-4 py-4">
         <section className="flex justify-end">
           <AiOutlineClose
             onClick={closeSideMenu}
@@ -176,7 +178,7 @@ function MobileNav({ closeSideMenu }) {
         </div>
 
         <section className="flex flex-col gap-4 mt-4 items-start text-gray-800">
-          <button className="bg-black border text-white py-2 px-4 border-white hover:bg-[#FFF5E9] hover:text-black transition-colors duration-300">
+          <button className="bg-blackColor border text-whiteColor py-2 px-4 border-whiteColor hover:bg-lightSkinColor hover:text-blackColor transition-colors duration-300">
             Live Chat
           </button>
         </section>
@@ -239,8 +241,8 @@ function SingleNavItem({ label, link, children, closeSideMenu, pathname }) {
         <Link
           href={link}
           onClick={closeSideMenu}
-          className={`text-[15px] font-normal flex justify-start items-center py-2 px-2 gap-2 cursor-pointer hover:bg-slate-200 transition-colors duration-300 w-full ${
-            pathname === link ? "text-green-500" : "text-black"
+          className={`text-[15px] font-normal flex justify-start items-center py-2 px-2 gap-2 cursor-pointer hover:bg-slateColor transition-colors duration-300 w-full ${
+            pathname === link ? "text-greenColor" : "text-blackColor"
           }`}
         >
           {label}
@@ -248,7 +250,7 @@ function SingleNavItem({ label, link, children, closeSideMenu, pathname }) {
       ) : (
         <div className="py-1 transition-all">
           <button
-            className="text-[15px] font-normal flex justify-between items-center py-2 px-2 gap-2 cursor-pointer w-full hover:bg-slate-200 transition-colors duration-300"
+            className="text-[15px] font-normal flex justify-between items-center py-2 px-2 gap-2 cursor-pointer w-full hover:bg-slateColor transition-colors duration-300"
             onClick={toggleDropdown}
           >
             {label}
@@ -266,8 +268,8 @@ function SingleNavItem({ label, link, children, closeSideMenu, pathname }) {
                   key={i}
                   href={ch.link}
                   onClick={closeSideMenu}
-                  className={`text-[15px] font-normal flex justify-start items-center py-2 px-2 gap-2 cursor-pointer hover:bg-slate-200 w-full ${
-                    pathname === ch.link ? "text-green-500" : "text-black"
+                  className={`text-[15px] font-normal flex justify-start items-center py-2 px-2 gap-2 cursor-pointer hover:bg-slateColor w-full ${
+                    pathname === ch.link ? "text-greenColor" : "text-blackColor"
                   }`}
                 >
                   {ch.label}

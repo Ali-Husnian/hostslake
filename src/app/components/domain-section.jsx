@@ -11,7 +11,7 @@ const DomainSection = () => {
     // Implement your search logic here
   };
   return (
-    <section className="py-16 bg-white">
+    <section className="py-16 bg-whiteCoor">
       <div className="container mx-auto text-center">
         {/* Heading */}
         <h2 className="text-4xl font-bold mb-4">Register Your Domain</h2>
@@ -35,12 +35,12 @@ const DomainSection = () => {
           {/* Buttons */}
           <div className="flex space-x-4 lg:space-x-0 lg:space-y-0 lg:flex-row gap-1">
             {/* Search button */}
-            <button className="w-full lg:w-auto px-6 py-3 bg-black text-white font-semibold hover:bg-gray-200 transition mt-4 lg:mt-0 hover:bg-card hover:text-black flex justify-center items-center">
+            <button className="w-full lg:w-auto px-6 py-3 bg-blackColor text-whiteColor font-semibold transition mt-4 lg:mt-0 hover:bg-skinColor hover:text-blackColor flex justify-center items-center">
               <FaSearch className="mr-2" /> Search
             </button>
 
             {/* Transfer button */}
-            <button className="w-full lg:w-auto px-6 py-3 border text-black font-semibold hover:bg-gray-200 transition mt-4 lg:mt-0  hover:bg-card flex justify-center items-center">
+            <button className="w-full lg:w-auto px-6 py-3 border text-blackColor font-semibold transition mt-4 lg:mt-0  hover:bg-skinColor flex justify-center items-center">
               <FaExchangeAlt className="mr-2" /> Transfer
             </button>
           </div>
@@ -102,7 +102,7 @@ const DomainSection = () => {
 
         {/* View Pricing Link */}
         <p className="text-gray-600">
-          <a href="#" className="text-black font-semibold hover:underline">
+          <a href="#" className="text-blackColor font-semibold hover:underline">
             View All Pricing
           </a>
         </p>

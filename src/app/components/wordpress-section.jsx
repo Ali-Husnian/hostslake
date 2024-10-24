@@ -5,7 +5,7 @@ import { FaArrowRight } from "react-icons/fa6";
 
 const WordpressSection = () => {
   return (
-    <section className="bg-white py-16">
+    <section className="bg-whiteColor py-16">
       <div className="container mx-auto">
         <div className="flex flex-col items-center justify-center text-center mb-100px space-y-6">
           <h3 className="text-4xl font-bold text-gray-900">
@@ -42,21 +42,21 @@ const WordpressSection = () => {
             </p>
             <ul className="space-y-2">
               <li className="flex items-center space-x-2">
-                <FaCheckCircle className="text-black" />
+                <FaCheckCircle className="text-blackColor" />
                 <span>Quis ipsum pendisse ultrices gravida</span>
               </li>
               <li className="flex items-center space-x-2">
-                <FaCheckCircle className="text-black" />
+                <FaCheckCircle className="text-blackColor" />
                 <span>Lorem ipsum dolor sit amet</span>
               </li>
               <li className="flex items-center space-x-2">
-                <FaCheckCircle className="text-black" />
+                <FaCheckCircle className="text-blackColor" />
                 <span>Risus eni commodo</span>
               </li>
             </ul>
 
             {/* Button */}
-            <button className="mt-6 px-6 py-3 text-black bg-white font-bold tracking-wide text-sm border border-black hover:text-white hover:bg-black transition-colors duration-300">
+            <button className="mt-6 px-6 py-3 text-blackColor bg-whiteColor font-bold tracking-wide text-sm border border-blackColor hover:text-whiteColor hover:bg-blackColor transition-colors duration-300">
               Get Started Now
             </button>
           </div>
@@ -77,7 +77,7 @@ const WordpressSection = () => {
             </p>
 
             {/* Button */}
-            <button className="mt-6 px-6 py-3 text-black bg-white font-bold tracking-wide text-sm border border-black hover:text-white hover:bg-black transition-colors duration-300">
+            <button className="mt-6 px-6 py-3 text-blackColor bg-whiteColor font-bold tracking-wide text-sm border border-blackColor hover:text-whiteColor hover:bg-blackColor transition-colors duration-300">
               Get Started Now
             </button>
           </div>
@@ -100,7 +100,7 @@ const WordpressSection = () => {
           </h2>
           <Link
             href="#"
-            className="flex items-center justify-center mt-6  text-black bg-white py-3 px-6 h-50px w-250px text-sm text-center hover:text-white hover:bg-black border transition-colors duration-300"
+            className="flex items-center justify-center mt-6  text-blackColor bg-whiteColor py-3 px-6 h-50px w-250px text-sm text-center hover:text-whiteColor hover:bg-blackColor border transition-colors duration-300"
           >
             <FaArrowRight className="mr-2" /> Get Started Now{" "}
           </Link>

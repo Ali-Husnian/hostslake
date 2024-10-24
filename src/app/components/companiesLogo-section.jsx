@@ -3,7 +3,7 @@ import React from "react";
 
 const CompaniesLogos = () => {
   return (
-    <section className="bg-white py-6">
+    <section className="bg-whiteColor py-6">
       <div className="container mx-auto">
         <div className="flex flex-col lg:flex-row space-y-6 items-center justify-between px-0 lg:px-6">
           <Image

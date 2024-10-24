@@ -36,7 +36,7 @@ const WebHostingFeatures = () => {
   ];
 
   return (
-    <section className="bg-gray-100 py-16 ">
+    <section className="bg-whiteColor py-16 ">
       <div className="container mx-auto px-4">
         <h2 className="text-4xl font-bold text-center mb-6">
           Advanced Web Hosting Features
@@ -51,18 +51,18 @@ const WebHostingFeatures = () => {
           {features.map((feature, index) => (
             <div
               key={index}
-              className="bg-white px-6 py-12 shadow-lg text-center border hover:bg-card transition-colors duration-300"
+              className="bg-whiteColor px-6 py-12 shadow-lg text-center border hover:bg-skinColor transition-colors duration-300"
             >
               <div className=" mb-8 flex items-center justify-center">
-                <div className="bg-black text-white p-4 rounded-full">
+                <div className="bg-blackColor text-whiteColor p-4 rounded-full">
                   {feature.icon}
                 </div>
               </div>
               <h3 className="text-2xl font-bold mb-6">{feature.title}</h3>
-              <p className="text-gray-600 mb-10">{feature.description}</p>
+              <p className="mb-10">{feature.description}</p>
               <Link
                 href="#"
-                className="flex items-center justify-center mr-2 font-bold text-black hover:text-gray-800 transition-colors duration-300"
+                className="flex items-center justify-center mr-2 font-bold text-blackColor hover:underline transition-colors duration-300"
               >
                 <FaArrowRight /> Learn More Info
               </Link>

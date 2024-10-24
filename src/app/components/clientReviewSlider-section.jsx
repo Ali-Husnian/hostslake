@@ -62,7 +62,7 @@ const reviews = [
 
 const ClientReviewSlider = () => {
   return (
-    <section className="bg-[#EEF0C3] py-16">
+    <section className="bg-lightYallowColor py-16">
       <div className="container mx-auto text-center px-4">
         <h2 className="text-4xl font-bold mb-4">Happy Client’s Reviews</h2>
         <p className="text-gray-500 mb-8">
@@ -101,7 +101,7 @@ const ClientReviewSlider = () => {
           >
             {reviews.map((review, index) => (
               <SwiperSlide key={index} className="flex justify-center">
-                <div className="bg-white border border-black p-8 w-full max-w-md">
+                <div className="bg-whiteColor border border-blackColor p-8 w-full max-w-md">
                   <div className="flex items-center mb-4">
                     <Image
                       src={review.image}

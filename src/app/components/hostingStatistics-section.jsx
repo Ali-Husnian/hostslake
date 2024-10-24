@@ -27,14 +27,14 @@ const stats = [
 
 const WebHostingStatistics = () => {
   return (
-    <section className="text-center bg-[#EEF0C3] py-16">
+    <section className="text-center bg-lightYallowColor py-16">
       <div className="container mx-auto px-4">
         <h2 className="text-4xl font-bold mb-10">Web Hosting Statistics</h2>
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {stats.map((stat, index) => (
             <div
               key={index}
-              className="bg-white shadow-lg px-6 py-12 space-y-4 border-4 border-transparent hover:border-black hover:bg-card transition-colors duration-300 hover:shadow-xl"
+              className="bg-whiteColor shadow-lg px-6 py-12 space-y-4 border-4 border-transparent hover:border-blackColor hover:bg-card transition-colors duration-300 hover:shadow-xl"
             >
               <div className="flex items-center justify-center">
                 {stat.icon}
